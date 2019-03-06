@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkerTheme"
+    tools:context=".fragment.TaskReport.TaskReportDataFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:padding="25dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/etlay_sc_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_sc_report"
+                        style="@style/EditTextReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="SC Report"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_no_telp"
+                        style="@style/EditTextReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="No Telp Report"
+                        android:inputType="phone" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_user_report"
+                        style="@style/EditTextReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="User Repot"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_toLeftOf="@+id/btn_nama_report"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_nama_report"
+                            style="@style/EditTextReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:enabled="false"
+                            android:hint="Nama Report"
+                            android:inputType="text"
+                            android:textColor="#c7c7c7" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageButton
+                        android:id="@+id/btn_nama_report"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_button_border"
+                        app:srcCompat="@drawable/ic_arrow_forward" />
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    app:hintEnabled="false">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_alamat"
+                        style="@style/EditTextReport"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Alamat Report"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="7dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_date"
+                            style="@style/EditTextReport"
+                            android:layout_width="110dp"
+                            android:layout_height="40dp"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:inputType="text" />
+
+                        <ImageButton
+                            android:id="@+id/btn_date_picker"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/et_date"
+                            android:background="@drawable/bg_button_border"
+                            android:padding="6dp"
+                            app:srcCompat="@drawable/ic_date2" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            app:hintEnabled="false">
+
+                            <Button
+                                android:id="@+id/btn_image_report"
+                                style="@style/ButtonReport"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="5dp"
+                                android:text="photo" />
+                        </android.support.design.widget.TextInputLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Switch
+                    android:id="@+id/cb_kendala"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Kendala"
+                    android:textColor="@color/white" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    app:hintEnabled="false">
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/spinner_kendala"
+                        style="@style/SpinnerStandard"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="kabupaten"
+                        android:popupBackground="@color/darkTheme"
+                        android:popupElevation="20dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_hiddenable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_odp_report"
+                            style="@style/EditTextReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="ODP Report"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_pc_report"
+                            style="@style/EditTextReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="PC Report"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_br_code_report"
+                            style="@style/EditTextReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="BR Code Report"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_port_report"
+                            style="@style/EditTextReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="Port Report"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_sn_out_report"
+                            style="@style/EditTextReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="Sn Out Report"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_macstb_report"
+                            style="@style/EditTextReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="Mactstb Report"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_sn_ont_report"
+                            style="@style/EditTextReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="Sn Ont report"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_ivr_report"
+                            style="@style/EditTextReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="IVR Report"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        app:hintEnabled="false">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/et_ket_report"
+                            style="@style/EditTextReport"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="Ket Report"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_hiddenable_2"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:id="@+id/lay_ko_report"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toLeftOf="@id/btn_ko_report"
+                            app:hintEnabled="false">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/et_ko_report"
+                                style="@style/EditTextReport"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="KO Report"
+                                android:inputType="text" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <ImageButton
+                            android:id="@+id/btn_ko_report"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/bg_button_border"
+                            app:srcCompat="@drawable/ic_my_location" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_toLeftOf="@id/btn_kp_report"
+                            app:hintEnabled="false">
+
+                            <android.support.design.widget.TextInputEditText
+                                android:id="@+id/et_kp_report"
+                                style="@style/EditTextReport"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="KP Report"
+                                android:inputType="text" />
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <ImageButton
+                            android:id="@+id/btn_kp_report"
+                            android:layout_width="38dp"
+                            android:layout_height="38dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/bg_button_border"
+                            app:srcCompat="@drawable/ic_my_location" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_submit_report_data"
+                    style="@style/ButtonLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="20dp"
+                    android:fitsSystemWindows="false"
+                    android:text="Simpan Data" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

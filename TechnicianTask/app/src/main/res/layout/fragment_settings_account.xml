@@ -1,0 +1,345 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkerTheme"
+    tools:context="techtask.nanda.techniciantask.fragment.SettingsDetail.AccountFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lay_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/darkerTheme"
+            android:paddingTop="10dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapse_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:expandedTitleMarginEnd="64dp"
+                app:expandedTitleMarginStart="48dp"
+                app:expandedTitleTextAppearance="@android:color/transparent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/darkerTheme"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="centerCrop"
+                        app:layout_collapseMode="parallax" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/darker3Theme" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.CardView
+                            android:id="@+id/view2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:elevation="12dp"
+                            app:cardCornerRadius="40dp">
+
+                            <ImageView
+                                android:id="@+id/img_profile"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginBottom="10dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_profile_photo" />
+
+                        </android.support.v7.widget.CardView>
+
+                        <TextView
+                            android:id="@+id/tv_nama_teknisi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/helvetica"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_profile" />
+
+                        <Button
+                            android:id="@+id/btn_edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="Edit profile" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/collapse_toolbar"
+                android:background="@color/darker2Theme" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/divider"
+                android:background="@color/darkTheme"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp">
+
+                    <!--<TextView
+                        style="@style/TextSettingsProfileTitle"
+                        android:text="INFORMASI PERSONAL" />-->
+
+
+                    <RelativeLayout
+                        android:id="@+id/alamat_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/ic_alamat_person"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Alamat Person"
+                            android:textColor="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/tv_alamat_person"
+                            style="@style/TextinfoProfile"
+                            android:layout_toRightOf="@id/ic_alamat_person"
+                            android:lineSpacingExtra="3dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/provinsi_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/ic_provinsi_person"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Provinsi"
+                            android:textColor="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/tv_provinsi_person"
+                            style="@style/TextinfoProfile"
+                            android:layout_toRightOf="@id/ic_provinsi_person"
+                            android:lineSpacingExtra="3dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/kabupaten_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/ic_kabupaten_person"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kabupaten"
+                            android:textColor="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/tv_kabupaten_person"
+                            style="@style/TextinfoProfile"
+                            android:layout_toRightOf="@id/ic_kabupaten_person"
+                            android:lineSpacingExtra="3dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/telp_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/ic_telp_person"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Telepon"
+                            android:textColor="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/tv_telp_person"
+                            style="@style/TextinfoProfile"
+                            android:layout_toRightOf="@id/ic_telp_person" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    style="@style/DividerSettings"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="16dp">
+
+                    <!--<TextView
+                        style="@style/TextSettingsProfileTitle"
+                        android:text="INFORMASI JABATAN DAN LOKASI" />-->
+
+                    <LinearLayout
+                        android:id="@+id/jabatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:text="Jabatan"
+                            android:textColor="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/tv_jabatan"
+                            style="@style/TextinfoProfile" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/nama_leader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:text="Nama Leader"
+                            android:textColor="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/tv_nama_leader"
+                            style="@style/TextinfoProfile" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/provinsi_penempatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:text="Provinsi"
+                            android:textColor="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/tv_provinsi_penempatan"
+                            style="@style/TextinfoProfile" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/kabupaten_penempatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top"
+                            android:text="Kabupaten"
+                            android:textColor="@color/grey" />
+
+                        <TextView
+                            android:id="@+id/tv_kabupaten_penempatan"
+                            style="@style/TextinfoProfile" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>

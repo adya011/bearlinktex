@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkTheme">#272727</color>
+    <color name="semiDarkerTheme">#232323</color>
+    <color name="darkerTheme">#181818</color>
+    <color name="darker2Theme">#141414</color>
+    <color name="darker3Theme">#101010</color>
+    <color name="redTheme">#d71c00</color>
+    <color name="greyDark">#545454</color>
+    <color name="grey">#8e8e8e</color>
+    <color name="greyLight">#ceccd1</color>
+    <color name="greyLighter">#dddbdf</color>
+    <color name="white">#fff</color>
+    <color name="black">#101010</color>
+    <color name="profile_background">#181818</color>
+</resources>

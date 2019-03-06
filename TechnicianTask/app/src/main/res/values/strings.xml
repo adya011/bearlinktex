@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Bearlink Teknisi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="conn_time_out">Terjadi kesalahan pada jaringan. Silahkan coba kembali.</string>
+    <string name="problem_occured">Terjadi kesalahan teknis.</string>
+    <string name="server_problem">Terjadi kesalahan pada server.</string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="terms_use"><u>Terms of Use</u></string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="version">Aplikasi Bearlink Teknisi versi V0.0.1</string>
+    <string name="about">Ini adalah aplikasi yang digunakan untuk reporting teknisi dari perusahaan PT. Bearlink</string>
+    <string name="guide_1">Setelah melakukan registrasi, dan disetujui oleh team leader, maka teknisi diperbolehkan untuk login dengan akun dan password yang telah didaftarkan.
+    Pada menu tab home, ubah switch go oline menjadi on yang berada di pojok kanan atas. Maka beberapa detik akan ditampilkan list dari task monitoring, pilih task monitoring yang diperlukan untuk
+    memulai task pengerjaan. Setelah teknisi memilih task monitoring maka sistem otomatis akan menge-create task pengerjaan berdasarkan id monitoring yang telah terpilih, list daritask pengerjaan ada di tab navigasi bagian tengah.
+    Dalam halaman ini terdapat tab PENDING untuk task pengerjaan yang belum disubmit, DONE untuk task pengerjaan yang telah disubmit, dan FAILED untuk task pengerjaan yang telah gagal.</string>
+    <string name="guide_2">Untuk memulai reporting, teknisi diharapkan telah membuat task pengerjaan yang dimana disebutkan dalam poin 2 di atas, pilih salah satu task pengerjaan maka sistem otomatis akan meng-create task reporting berdasarkan
+    task pengerjaan yang dipilih tadi.</string>
+    <string name="guide_3">Setelah teknisi memilih task pengerjaan dan data report telah dibuat, tersedia beberapa form untuk reporting.
+        Isikan data-data reporting tersebut, untuk tombol PHOTO maka diarahkan ke halaman foto reporting, di halaman ini teknisi menginput data-data foto site reporting yang perlu.
+        Untuk KO report dan KP report tap tombol sebelah kanan form maka akan otomatis terisi data longitude dan latitude lokasi.
+        Setelah data telah terisi dengan benar, tap tombol SIMPAN DATA untuk menyimpan data yang telah diinputkan.
+    </string>
+    <string name="guide_4">Pada tab ketiga terdapat halaman settings, yaitu halaman informasi profil dan aplikasi serta untuk mengatur preferensi aplikasi dan data teknisi.</string>
+</resources>

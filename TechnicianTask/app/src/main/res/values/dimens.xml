@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_standard_size">14sp</dimen>
+    <dimen name="text_settings">14sp</dimen>
+    <dimen name="text_profile">20sp</dimen>
+    <dimen name="text_position">14sp</dimen>
+</resources>

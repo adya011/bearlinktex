@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_profile"
+        android:title="ACCOUNT" />
+
+    <item
+        android:id="@+id/password"
+        android:icon="@drawable/ic_privacy"
+        android:title="PASSWORD" />
+
+    <item
+        android:id="@+id/notification"
+        android:actionLayout="@layout/layout_nav_switch"
+        android:icon="@drawable/ic_notifications"
+        android:title="NOTIFICATION" />
+
+    <item
+        android:id="@+id/guide"
+        android:icon="@drawable/ic_guide"
+        android:title="GUIDE" />
+
+    <item
+        android:id="@+id/about"
+        android:icon="@drawable/ic_about"
+        android:title="ABOUT" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="LOGOUT" />
+</menu>

@@ -1,0 +1,190 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">5.0dp</item>
+    </style>
+
+    <style name="EditTextLogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
+        <item name="android:background">@drawable/bg_edittext_textbox</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@drawable/et_hint_color_selector</item>
+        <item name="android:textColor">@drawable/et_color_selector</item>
+    </style>
+
+    <style name="EditTextReport">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
+        <item name="android:background">@drawable/bg_edittext_textbox_report</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@drawable/et_hint_color_selector</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="EditTextLoginBertex">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:layout_marginBottom">7dp</item>
+        <item name="android:background">@drawable/bg_edittext_textbox_bertex</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@drawable/et_hint_color_selector</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SpinnerStandard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">7dp</item>
+        <item name="android:background">@drawable/bg_spinner</item>
+        <item name="android:popupBackground">@color/darkTheme</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColorHint">@drawable/et_hint_color_selector</item>
+        <item name="android:textColor">@drawable/et_color_selector</item>
+    </style>
+
+    <style name="ButtonLogin">
+        <item name="android:background">@drawable/bg_button_standard</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="ButtonBertex">
+        <item name="android:background">@drawable/bg_button_standard_bertex</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="ButtonReport">
+        <item name="android:background">@drawable/bg_button_report</item>
+        <item name="android:textColor">@color/redTheme</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="ButtonPhoto">
+        <item name="android:background">@drawable/bg_button_standard</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="ButtonSubmit">
+        <item name="android:background">@drawable/bg_button_standard_no_radius</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="ButtonPickerDate">
+        <item name="android:background">@drawable/bg_button_standard_dark</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="ButtonEditAccount">
+        <item name="android:background">@drawable/bg_button_edit_account</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="ButtonRegister">
+        <item name="android:background">@drawable/bg_button_standard_dark</item>
+        <item name="android:textColor">@color/greyLight</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="ThemeSpinner">
+        <item name="colorControlNormal">#c1c1c1</item>
+        <item name="colorAccent">#494949</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="TextSettings">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">18dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_settings</item>
+    </style>
+
+    <style name="TextinfoProfile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">top</item>
+        <item name="android:fontFamily">@font/helvetica</item>
+        <item name="android:textColor">@color/greyLight</item>
+        <item name="android:textSize">@dimen/text_settings</item>
+    </style>
+
+    <style name="TextSettingsTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextSettingsProfileTitle">
+        <item name="android:fontFamily">@font/helvetica</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DividerSettings">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="android:layout_marginLeft">19dp</item>
+        <item name="android:background">@color/darkerTheme</item>
+    </style>
+
+    <!--<style name="ButtonRegister">
+        <item name="android:background">@drawable/bg_button_standard_white</item>
+        <item name="android:textSize">18sp</item>
+    </style>-->
+
+</resources>

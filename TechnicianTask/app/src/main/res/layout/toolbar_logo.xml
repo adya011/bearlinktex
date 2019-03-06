@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_alignParentTop="true"
+    android:background="@color/redTheme"
+    android:gravity="center"
+    android:paddingRight="20dp"
+    android:textAlignment="center"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:contentInsetEnd="60dp"
+    app:contentInsetStart="50dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:id="@+id/lay_bertex_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_bertex_toolbar_offline"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/img_bertex_toolbar_offline" />
+
+            <ImageView
+                android:id="@+id/img_bertex_toolbar_online"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/img_bertex_toolbar_online"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <!--<ImageView
+            android:id="@+id/title_logo"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/logo"
+            android:src="@drawable/img_bertex_title" />-->
+
+        <!--<TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="bearlink"
+            android:textSize="16sp"
+            android:fontFamily="@font/helvetica"
+            android:textAllCaps="true"
+            android:textStyle="bold" />-->
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

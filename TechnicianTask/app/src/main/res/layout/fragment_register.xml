@@ -1,0 +1,174 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkTheme"
+    android:backgroundTint="@color/darkerTheme"
+    tools:context="techtask.nanda.techniciantask.fragment.RegisterFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                app:hintEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_nama_person"
+                    style="@style/EditTextReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Nama"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                app:hintEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_alamat_person"
+                    style="@style/EditTextReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Alamat"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                app:hintEnabled="false">
+
+                <Spinner
+                    android:id="@+id/sp_provinsi"
+                    style="@style/SpinnerStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                app:hintEnabled="false">
+
+                <Spinner
+                    android:id="@+id/sp_kabupaten"
+                    style="@style/SpinnerStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="kabupaten" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/et_tanggal_lahir"
+                        style="@style/EditTextReport"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:inputType="text" />
+
+                    <ImageButton
+                        android:id="@+id/btn_date_picker"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/et_tanggal_lahir"
+                        android:background="@drawable/bg_button_border"
+                        android:padding="6dp"
+                        app:srcCompat="@drawable/ic_date2" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                app:hintEnabled="false">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/et_telephone"
+                    style="@style/EditTextReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Nomer Hp"
+                    android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:text=" Penempatan" />
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                app:hintEnabled="false">
+
+                <Spinner
+                    android:id="@+id/sp_penempatan"
+                    style="@style/SpinnerStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                app:hintEnabled="false">
+
+                <Spinner
+                    android:id="@+id/sp_penempatan_area"
+                    style="@style/SpinnerStandard"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Penempatan" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/ButtonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="Register" />
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

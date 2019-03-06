@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkerTheme"
+    tools:context="techtask.nanda.techniciantask.fragment.TaskReport.TaskReportDataWODetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/tv_wo_detail_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WO detail 1"
+            android:layout_marginBottom="9dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_wo_detail_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WO detail 2"
+            android:layout_marginBottom="9dp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</FrameLayout>
