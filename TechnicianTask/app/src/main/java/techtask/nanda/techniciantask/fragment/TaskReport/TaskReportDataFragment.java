@@ -33,6 +33,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import java.net.SocketTimeoutException;
 import java.text.DateFormat;
@@ -205,29 +206,46 @@ public class TaskReportDataFragment extends BaseFragment {
         int id = item.getItemId();
         switch (id) {
             case R.id.menu_copy:
-                //etNamaReport.getText().toString();
+                String noTelp = (etNoTelp.getText().toString().length() > 0) ? etNoTelp.getText().toString() : " - ";
+                String userReport = (etUserReport.getText().toString().length() > 0) ? etUserReport.getText().toString() : " - ";
+                String namaReport = (etNamaReport.getText().toString().length() > 0) ? etNamaReport.getText().toString() : " - ";
+                String alamatReport = (etAlamatReport.getText().toString().length() > 0) ? etAlamatReport.getText().toString() : " - ";
+                String odpReport = (etOdpReport.getText().toString().length() > 0) ? etOdpReport.getText().toString() : " - ";
+                String pcReport = (etPcReport.getText().toString().length() > 0) ? etPcReport.getText().toString() : " - ";
+                String brCodeReport = (etBrCodeReport.getText().toString().length() > 0) ? etBrCodeReport.getText().toString() : " - ";
+                String portReport = (etPortReport.getText().toString().length() > 0) ? etPortReport.getText().toString() : " - ";
+                String snOutReport = (etSnOutReport.getText().toString().length() > 0) ? etSnOutReport.getText().toString() : " - ";
+                String macstbReport = (etMacstbReport.getText().toString().length() > 0) ? etMacstbReport.getText().toString() : " - ";
+                String snOntReport = (etSnOntReport.getText().toString().length() > 0) ? etSnOntReport.getText().toString() : " - ";
+                String koReport = (etKoReport.getText().toString().length() > 0) ? etKoReport.getText().toString() : " - ";
+                String kpReport = (etKpReport.getText().toString().length() > 0) ? etKpReport.getText().toString() : " - ";
+                String ivrReport = (etIvrReport.getText().toString().length() > 0) ? etIvrReport.getText().toString() : " - ";
+                String ketReport = (etKetReport.getText().toString().length() > 0) ? etKetReport.getText().toString() : " - ";
+                String dateReport = (etDate.getText().toString().length() > 0) ? etDate.getText().toString() : " - ";
 
                 String textToCopy =
-                                etNoTelp.getText().toString() + "\n" +
-                                etUserReport.getText().toString() + "\n" +
-                                etNamaReport.getText().toString() + "\n" +
-                                etAlamatReport.getText().toString() + "\n" +
-                                etOdpReport.getText().toString() + "\n" +
-                                etPcReport.getText().toString() + "\n" +
-                                etBrCodeReport.getText().toString() + "\n" +
-                                etPortReport.getText().toString() + "\n" +
-                                etSnOutReport.getText().toString() + "\n" +
-                                etMacstbReport.getText().toString() + "\n" +
-                                etSnOntReport.getText().toString() + "\n" +
-                                etKoReport.getText().toString() + "\n" +
-                                etKpReport.getText().toString() + "\n" +
-                                etIvrReport.getText().toString() + "\n" +
-                                etKetReport.getText().toString() + "\n" +
-                                etDate.getText().toString();
+                        "No Telp Report: " + noTelp + "\n" +
+                                "User Report: " + userReport + "\n" +
+                                "Nama Report: " + namaReport + "\n" +
+                                "Alamat Report: " + alamatReport + "\n" +
+                                "ODP Report: " + odpReport + "\n" +
+                                "PC Report: " + pcReport + "\n" +
+                                "BR Code Report: " + brCodeReport + "\n" +
+                                "Port Report: " + portReport + "\n" +
+                                "Sn Out Report: " + snOutReport + "\n" +
+                                "Mactstb Report:: " + macstbReport + "\n" +
+                                "Sn Ont Report: " + snOntReport + "\n" +
+                                "Ko Report: " + koReport + "\n" +
+                                "Kp Report: " + kpReport + "\n" +
+                                "IVR Report: " + ivrReport + "\n" +
+                                "Ket Report: " + ketReport + "\n" +
+                                "Date Report: " + dateReport;
 
                 ClipboardManager clipboard = (ClipboardManager) getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
                 ClipData clip = ClipData.newPlainText("copy_report", textToCopy);
                 clipboard.setPrimaryClip(clip);
+
+                Toast.makeText(getActivity(), getResources().getString(R.string.report_copied), Toast.LENGTH_SHORT).show();
 
                 break;
         }

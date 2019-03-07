@@ -13,6 +13,8 @@
     <string name="open">Open</string>
     <string name="close">Close</string>
 
+    <string name="report_copied">Report copied to clipboard</string>
+
     <string name="version">Aplikasi Bearlink Teknisi versi V0.0.1</string>
     <string name="about">Ini adalah aplikasi yang digunakan untuk reporting teknisi dari perusahaan PT. Bearlink</string>
     <string name="guide_1">Setelah melakukan registrasi, dan disetujui oleh team leader, maka teknisi diperbolehkan untuk login dengan akun dan password yang telah didaftarkan.

@@ -256,13 +256,20 @@ public class TaskReportImageFragment extends BaseFragment {
 
                 String text = "Local: " + dateFormat.format(date) + "\n" + longt + ", " + latt + "\n"
                         + address1 + "\n" + address2 + "\n" + address3 + "\n" + address4;
+
                 Canvas canvas = new Canvas(bmp);
                 TextPaint paint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
+                TextPaint strokePaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
+
                 paint.setTextAlign(Paint.Align.RIGHT);
                 paint.setAntiAlias(true);
                 paint.setColor(Color.WHITE);
+
+
                 int txtSize = 8;
+                int txtStrokeSize = 8;
                 double relation = Math.sqrt(canvas.getWidth() * canvas.getHeight()) / 250;
+
                 paint.setTextSize((float) (txtSize * relation));
                 int textWidth = canvas.getWidth() - (int) (16 * scale);
                 StaticLayout textLayout = new StaticLayout(
@@ -270,6 +277,26 @@ public class TaskReportImageFragment extends BaseFragment {
                 int textHeight = textLayout.getHeight();
                 float x = bmp.getWidth() - 1;
                 float y = (bmp.getHeight() - textHeight) - 1;
+
+
+                strokePaint.setStyle(Paint.Style.STROKE);
+                strokePaint.setTextAlign(Paint.Align.RIGHT);
+                strokePaint.setStrokeWidth(2);
+                paint.setAntiAlias(true);
+                strokePaint.setColor(Color.BLACK);
+
+                strokePaint.setTextSize((float) (txtStrokeSize * relation));
+                int textStrokeWidth = canvas.getWidth() - (int) (16 * scale);
+                StaticLayout textStrokeLayout = new StaticLayout(
+                        text, strokePaint, textStrokeWidth, Layout.Alignment.ALIGN_NORMAL, 1.0f, 0.0f, false);
+                int textStrokeHeight = textStrokeLayout.getHeight();
+                float strokeX = bmp.getWidth() - 1;
+                float strokeY = (bmp.getHeight() - textStrokeHeight) - 1;
+
+                canvas.save();
+                canvas.translate(strokeX, strokeY);
+                textStrokeLayout.draw(canvas);
+                canvas.restore();
 
                 canvas.save();
                 canvas.translate(x, y);

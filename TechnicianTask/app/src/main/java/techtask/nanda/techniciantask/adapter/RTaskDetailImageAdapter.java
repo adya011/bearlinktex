@@ -49,6 +49,36 @@ public class RTaskDetailImageAdapter extends RecyclerView.Adapter<RTaskDetailIma
 
         int pos = position + 1;
         holder.tvImage.setText("Gambar " + pos);
+
+        switch (pos) {
+            case 1:
+                holder.tvImage.setText(pos + ". Label OOp");
+                break;
+            case 2:
+                holder.tvImage.setText(pos + ". Port Odp");
+                break;
+            case 3:
+                holder.tvImage.setText(pos + ". Barcode");
+                break;
+            case 4:
+                holder.tvImage.setText(pos + ". Hr");
+                break;
+            case 5:
+                holder.tvImage.setText(pos + ". Ikr");
+                break;
+            case 6:
+                holder.tvImage.setText(pos + ". Roset");
+                break;
+            case 7:
+                holder.tvImage.setText(pos + ". Sn Ont");
+                break;
+            case 8:
+                holder.tvImage.setText(pos + ". Layanan Up");
+                break;
+            case 9:
+                holder.tvImage.setText(pos + ". Evident Pel");
+                break;
+        }
     }
 
     @Override
